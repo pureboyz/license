@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface IndexMapper
 {
 
-	String Index();
+	public String Index();
 
 }

@@ -15,8 +15,7 @@ public class IndexService
 	public String Index()
 	{
 		System.out.println("Index Service!!");
-		return null;
-//		return indexMapper.Index();
+		return indexMapper.Index();
 	}
 
 }
