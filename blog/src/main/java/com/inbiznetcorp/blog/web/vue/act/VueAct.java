@@ -1,15 +1,15 @@
-package com.example.blog.web.raspberry.act;
+package com.inbiznetcorp.blog.web.vue.act;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/Raspberry")
-public class RaspberryAct
+@RequestMapping("/Vue")
+public class VueAct
 {
 	@RequestMapping(value = {"", "/", "/Index"})
 	public String Index()
 	{
-		return "/Raspberry/Index";
+		return "/Vue/Index";
 	}
 }

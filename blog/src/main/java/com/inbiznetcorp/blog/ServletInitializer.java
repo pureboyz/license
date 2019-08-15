@@ -1,4 +1,4 @@
-package com.example.blog;
+package com.inbiznetcorp.blog;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
