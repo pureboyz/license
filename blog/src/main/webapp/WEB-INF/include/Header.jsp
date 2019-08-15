@@ -12,25 +12,25 @@
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	    <meta name="viewport" content="width=device-width" />
 		
-	    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
-	    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet" />
+	    <link href="/bootstrap3/css/bootstrap.css" rel="stylesheet" />
+	    <link href="/bootstrap3/css/font-awesome.css" rel="stylesheet" />
 	    
-		<link href="assets/css/gsdk.css" rel="stylesheet" />   
-	    <link href="assets/css/demo.css?20190815_001" rel="stylesheet" /> 
+		<link href="/assets/css/gsdk.css?20190815_002" rel="stylesheet" />   
+	    <link href="/assets/css/demo.css?20190815_001" rel="stylesheet" /> 
 	
 	    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 	    
-	    <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
-		<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+	    <script src="/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+		<script src="/assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 	
-		<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
-		<script src="assets/js/gsdk-checkbox.js"></script>
-		<script src="assets/js/gsdk-radio.js"></script>
-		<script src="assets/js/gsdk-bootstrapswitch.js"></script>
-		<script src="assets/js/get-shit-done.js"></script>
+		<script src="/bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+		<script src="/assets/js/gsdk-checkbox.js"></script>
+		<script src="/assets/js/gsdk-radio.js"></script>
+		<script src="/assets/js/gsdk-bootstrapswitch.js"></script>
+		<script src="/assets/js/get-shit-done.js"></script>
 		
-	    <script src="assets/js/custom.js"></script>
+	    <script src="/assets/js/custom.js"></script>
 	    
 	    <style>
 	    	html {overflow-y:scroll;}
@@ -74,18 +74,24 @@
 <!-- 										<li><a href="#">Separated link</a></li> -->
 									</ul>
 								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">자격증 <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="/License/EIC">정보통신기사</a></li>
+									</ul>
+								</li>
 							</ul>
 							<!-- //상단 메뉴 왼쪽 -->
 							
 							<!-- 검색 -->
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a></li>
-							</ul>
-							<form class="navbar-form navbar-right navbar-search-form" role="search">                  
-								<div class="form-group">
-									<input type="text" value="" onKeyDown="if(event.keyCode==13){event.preventDefault();console.log('123');}" class="form-control" placeholder="Search...">
-								</div> 
-							</form>
+<!-- 							<ul class="nav navbar-nav navbar-right"> -->
+<!-- 								<li><a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a></li> -->
+<!-- 							</ul> -->
+<!-- 							<form class="navbar-form navbar-right navbar-search-form" role="search">                   -->
+<!-- 								<div class="form-group"> -->
+<!-- 									<input type="text" value="" onKeyDown="if(event.keyCode==13){event.preventDefault();console.log('123');}" class="form-control" placeholder="Search..."> -->
+<!-- 								</div>  -->
+<!-- 							</form> -->
 							<!-- //검색 -->
 							
 							<!-- 상단 메뉴 오른쪽 -->
@@ -106,7 +112,7 @@
 				<div class="motto">
 		            <br/><div>Let's always relax.</div>
 		        </div>
-					<div class="img-src" style="background-image: url('assets/img/bg.jpg')"></div>
+					<div class="img-src" style="background-image: url('/assets/img/bg.jpg')"></div>
 				</div>
 				
 			</div>
