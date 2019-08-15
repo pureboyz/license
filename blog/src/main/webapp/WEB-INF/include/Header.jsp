@@ -85,10 +85,10 @@
 							<!-- //검색 -->
 							
 							<!-- 상단 메뉴 오른쪽 -->
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Register</a></li>
-								<li><button class="btn btn-round btn-default">Sign in</button></li>
-							</ul>
+<!-- 							<ul class="nav navbar-nav navbar-right"> -->
+<!-- 								<li><a href="#">Register</a></li> -->
+<!-- 								<li><button class="btn btn-round btn-default">Sign in</button></li> -->
+<!-- 							</ul> -->
 							<!-- //상단 메뉴 오른쪽 -->
 							
 						</div>
