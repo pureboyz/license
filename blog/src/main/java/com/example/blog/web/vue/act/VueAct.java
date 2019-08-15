@@ -1,14 +1,15 @@
-package com.example.blog.web.index.act;
+package com.example.blog.web.vue.act;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class IndexController
+@RequestMapping("/Vue")
+public class VueAct
 {
-	@RequestMapping(value = {"", "/", "Index"})
+	@RequestMapping(value = {"", "/", "/Index"})
 	public String Index()
 	{
-		return "index/Index";
+		return "/Vue/Index";
 	}
 }

@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="ko">
 	<head>
@@ -6,7 +7,7 @@
 		<link rel="icon" type="image/png" href="assets/img/favicon.png">	
 		
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<title></title>
+		<title>Pureboyz Life Log</title>
 	
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	    <meta name="viewport" content="width=device-width" />
@@ -15,7 +16,7 @@
 	    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet" />
 	    
 		<link href="assets/css/gsdk.css" rel="stylesheet" />   
-	    <link href="assets/css/demo.css" rel="stylesheet" /> 
+	    <link href="assets/css/demo.css?20190815_001" rel="stylesheet" /> 
 	
 	    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
@@ -30,6 +31,10 @@
 		<script src="assets/js/get-shit-done.js"></script>
 		
 	    <script src="assets/js/custom.js"></script>
+	    
+	    <style>
+	    	html {overflow-y:scroll;}
+	    </style>
 	  
 	</head>
 	
@@ -45,13 +50,13 @@
 					<div class="container">
 					
 						<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="/">Pureboyz</a>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="/">Pureboyz Life Log </a>
 						</div>
 				
 					    <!-- 상단 메뉴 -->
@@ -59,27 +64,26 @@
 						
 							<!-- 상단 메뉴 왼쪽 -->
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Link</a></li>
+<!-- 								<li class="active"><a href="#">Link</a></li> -->
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">개발공부 <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something</a></li>
-										<li class="divider"></li>
-										<li><a href="#">Separated link</a></li>
+										<li><a href="/Vue">Vue.js</a></li>
+										<li><a href="/Raspberry">Raspberry Pi</a></li>
+<!-- 										<li class="divider"></li> -->
+<!-- 										<li><a href="#">Separated link</a></li> -->
 									</ul>
 								</li>
-								<li><a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a></li>
 							</ul>
 							<!-- //상단 메뉴 왼쪽 -->
 							
 							<!-- 검색 -->
-							<form class="navbar-form navbar-left navbar-search-form" role="search">                  
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a></li>
+							</ul>
+							<form class="navbar-form navbar-right navbar-search-form" role="search">                  
 								<div class="form-group">
-									<input type="text" value="" class="form-control" placeholder="Search...">
+									<input type="text" value="" onKeyDown="if(event.keyCode==13){event.preventDefault();console.log('123');}" class="form-control" placeholder="Search...">
 								</div> 
 							</form>
 							<!-- //검색 -->
@@ -99,6 +103,9 @@
 				<!-- //navigation -->
 			
 				<div class="blurred-container">
+				<div class="motto">
+		            <br/><div>Let's always relax.</div>
+		        </div>
 					<div class="img-src" style="background-image: url('assets/img/bg.jpg')"></div>
 				</div>
 				
