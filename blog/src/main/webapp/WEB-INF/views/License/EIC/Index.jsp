@@ -22,7 +22,7 @@
 			</button>
 			<ul class="dropdown-menu pull-right" aria-labelledby="about-us">
 				<li><a href="#">디지털전자회로</a></li>
-				<li><a href="#">정보통신시스템</a></li>
+				<li><a href="/License/EIC/Chapter2">정보통신시스템</a></li>
 				<li><a href="#">정보통신기기</a></li>
 				<li><a href="#">정보전송공학</a></li>
 				<li><a href="#">전자계산기일반</a></li>

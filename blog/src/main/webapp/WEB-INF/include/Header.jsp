@@ -12,7 +12,7 @@
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	    <meta name="viewport" content="width=device-width" />
 		
-	    <link href="/bootstrap3/css/bootstrap.css" rel="stylesheet" />
+	    <link href="/bootstrap3/css/bootstrap.css?20190816_001" rel="stylesheet" />
 	    <link href="/bootstrap3/css/font-awesome.css" rel="stylesheet" />
 	    
 		<link href="/assets/css/gsdk.css?20190815_002" rel="stylesheet" />   
@@ -75,9 +75,9 @@
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">자격증 <b class="caret"></b></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">자격증 문제풀기 <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="/License/EIC">정보통신기사</a></li>
+										<li><a href="/License/EIC/Index">정보통신기사</a></li>
 									</ul>
 								</li>
 							</ul>
