@@ -18,13 +18,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @author someone
  * @version 1.0.0
  */
-public class JsonUtil {
+public class JsonUtil
+{
  
     /**
      * Map을 json으로 변환한다.
      *
-     * @param map Map<String, Object>.
-     * @return JSONObject.
+     * @param Map<String, Object>
+     * @return JSONObject
      */
     @SuppressWarnings("unchecked")
 	public static JSONObject MapToJSONObject( Map<String, Object> map )
@@ -42,8 +43,8 @@ public class JsonUtil {
     /**
      * List<Map>을 jsonArray로 변환한다.
      *
-     * @param list List<Map<String, Object>>.
-     * @return JSONArray.
+     * @param List<Map<String, Object>>
+     * @return JSONArray
      */
     @SuppressWarnings("unchecked")
 	public static JSONArray ListToJSONArray( List<Map<String, Object>> list )
@@ -59,8 +60,8 @@ public class JsonUtil {
     /**
      * List<Map>을 jsonString으로 변환한다.
      *
-     * @param list List<Map<String, Object>>.
-     * @return String.
+     * @param List<Map<String, Object>>
+     * @return String
      */
     public static String ListToJSONString( List<Map<String, Object>> list )
     {
@@ -71,8 +72,8 @@ public class JsonUtil {
     /**
      * JsonObject를 Map<String, String>으로 변환한다.
      *
-     * @param jsonObj JSONObject.
-     * @return Map<String, Object>.
+     * @param JSONObject
+     * @return Map<String, Object>
      */
     @SuppressWarnings("unchecked")
     public static Map<String, Object> JSONObjectToMap( JSONObject jsonObj )
@@ -97,8 +98,8 @@ public class JsonUtil {
     /**
      * JsonArray를 List<Map<String, Object>>으로 변환한다.
      *
-     * @param jsonArray JSONArray.
-     * @return List<Map<String, Object>>.
+     * @param JSONArray
+     * @return List<Map<String, Object>>
      */
     public static List<Map<String, Object>> JSONArrayToList( JSONArray jsonArray )
     {
