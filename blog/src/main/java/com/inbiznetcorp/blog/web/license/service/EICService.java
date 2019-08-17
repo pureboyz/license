@@ -1,15 +1,12 @@
 package com.inbiznetcorp.blog.web.license.service;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 
 import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.springframework.stereotype.Service;
 
+import com.inbiznetcorp.blog.Util.JsonUtil;
 import com.inbiznetcorp.blog.mapper.license.EICMapper;
-import com.inbiznetcorp.blog.vo.EicVO;
 
 @Service("com.inbiznetcorp.blog.web.license.service.EICService")
 public class EICService
@@ -20,7 +17,6 @@ public class EICService
 	/**
 	 * Chapter2 20문제를 가져온다.
 	 */
-	@SuppressWarnings("unchecked")
 	public JSONArray Chapter2()
 	{
 		String 	seqStr 	= "";	// 랜덤으로 뽑은 20개의 숫자가 담기는 문자열.
@@ -50,24 +46,7 @@ public class EICService
 			
 		}
 		
-		List<EicVO> questionList 	= eicMapper.Chapter2(seqStr);
-		JSONArray 	questionJArray 	= new JSONArray();
-		
-		for(EicVO question : questionList)
-		{
-			JSONObject jObj = new JSONObject();
-			jObj.put("seq", 		question.getSeq());
-			jObj.put("question", 	question.getQuestion());
-			jObj.put("example1", 	question.getExample1());
-			jObj.put("example2", 	question.getExample2());
-			jObj.put("example3", 	question.getExample3());
-			jObj.put("example4", 	question.getExample4());
-			jObj.put("answer", 		question.getAnswer());
-			
-			questionJArray.add(jObj);
-		}
-		
-		return questionJArray;
+		return JsonUtil.ListToJSONArray(eicMapper.Chapter2(seqStr));
 	}
 
 }

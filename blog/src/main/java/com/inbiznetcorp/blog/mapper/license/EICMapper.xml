@@ -3,7 +3,8 @@
 
 <mapper namespace="com.inbiznetcorp.blog.mapper.license.EICMapper">
 
-	<select id="Chapter2" parameterType="String" resultType="com.inbiznetcorp.blog.vo.EicVO">
+	<!-- Chapter2 20문제를 가져온다. -->
+	<select id="Chapter2" parameterType="String" resultType="hashmap">
 		SELECT
 			 SEQ
 			,QUESTION

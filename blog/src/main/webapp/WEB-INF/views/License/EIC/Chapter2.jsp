@@ -45,6 +45,12 @@
 	<body>
 		<div class="main">
 			<div class="container tim-container" style="max-width:800px; padding-top:100px">
+			
+				<!-- TEST 취소 버튼 -->
+				<div class="text-right">
+					<button class="btn btn-default btn-round" id="btnCancel">TEST 취소</button>
+				</div>
+				<!-- //TEST 취소 버튼 -->
 				
 				<!-- title -->
 				<h2>디지털전자회로</h2>
@@ -91,7 +97,7 @@
 						<!-- //보기 -->
 						
 						<!-- 채점부분 -->
-						<div class="row examples scoring">
+						<div class="row scoring">
 							<div class="col-md-10">
 								<span id="scoring"></span>
 							</div>
@@ -106,6 +112,15 @@
 				
 			</div>
 		</div>
+		
+		<!-- 테스트 종료 시 실행되는 form -->
+		<form action="/License/EIC/Chapter2/TestComplete" method="POST" name="formComplete">
+			<input type="hidden" name="subject" value="정보통신시스템" />
+			<input type="hidden" name="score" value="" />
+			<input type="hidden" name="questionNumber" value="" />
+		</form>
+		<!-- //테스트 종료 시 실행되는 form -->
+		
 	</body>
 	
 </html>

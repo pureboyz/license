@@ -1,6 +1,7 @@
 package com.inbiznetcorp.blog.web.license.act;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.json.simple.JSONArray;
 import org.springframework.stereotype.Controller;
@@ -16,15 +17,6 @@ public class EICAct
 {
 	@Resource(name="com.inbiznetcorp.blog.web.license.service.EICService")
 	EICService eicService;
-	
-	/**
-	 * 자격증 메인 페이지
-	 */
-//	@RequestMapping(value = {"", "/", "/Index"})
-//	public String Index()
-//	{
-//		return "/License/Index";
-//	}
 	
 	/**
 	 * 정보통신기사 페이지
@@ -50,9 +42,19 @@ public class EICAct
 	@RequestMapping("/Chapter2/getQuestionList")
 	public @ResponseBody JSONArray getQuestionList()
 	{
-		JSONArray questionJArray = eicService.Chapter2();
-		
-		return questionJArray;
+		return eicService.Chapter2();
+	}
+	
+	/**
+	 * Chapter2 Test 종료
+	 */
+	@RequestMapping("/Chapter2/TestComplete")
+	public String TestComplete(HttpServletRequest request)
+	{
+		System.out.println(request.getParameter("subject"));
+		System.out.println(request.getParameter("score"));
+		System.out.println(request.getParameter("questionNumber"));
+		return "redirect:/License/EIC/Index";
 	}
 	
 }
