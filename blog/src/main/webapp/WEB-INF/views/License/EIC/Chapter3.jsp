@@ -29,7 +29,7 @@
 				<!-- //TEST 취소 버튼 -->
 				
 				<!-- title -->
-				<h2>디지털전자회로</h2>
+				<h2>정보통신기기</h2>
 				<!-- //title -->
 				
 				<hr/>
@@ -74,10 +74,10 @@
 						
 						<!-- 채점부분 -->
 						<div class="row scoring">
-							<div class="col-md-10">
+							<div class="col-md-6">
 								<span id="scoring"></span>
 							</div>
-							<div class="col-md-2">
+							<div class="col-md-6" style="text-align:right;">
 								<button class="btn btn-primary btn-round" id="btnNext">다음문제</button>
 							</div>
 						</div>
@@ -101,4 +101,4 @@
 	
 </html>
 
-<%@include file="/WEB-INF/views/License/EIC/Chapter2_Script.jsp"%>
+<%@include file="/WEB-INF/views/License/EIC/Chapter3_Script.jsp"%>

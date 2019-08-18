@@ -3,8 +3,8 @@
 
 <mapper namespace="com.inbiznetcorp.blog.mapper.license.EICMapper">
 
-	<!-- Chapter2 20문제를 가져온다. -->
-	<select id="Chapter2" parameterType="String" resultType="hashmap">
+	<!-- Chapter3 20문제를 가져온다. -->
+	<select id="Chapter3" parameterType="String" resultType="hashmap">
 		SELECT
 			 SEQ
 			,QUESTION
@@ -14,7 +14,7 @@
 			,EXAMPLE4
 			,ANSWER
 		FROM
-			CHAPTER2
+			CHAPTER3
 		WHERE 1=1
 			AND SEQ IN (${value})
 	</select>

@@ -16,11 +16,11 @@ public class EICService
 	EICMapper eicMapper;
 
 	/**
-	 * Chapter2 20문제를 가져온다.
+	 * Chapter3 20문제를 가져온다.
 	 */
-	public JSONArray Chapter2()
+	public JSONArray Chapter3()
 	{
-		return JsonUtil.ListToJSONArray(eicMapper.Chapter2(RandomNumberUtil.RandomNumberToStr(240, 20)));
+		return JsonUtil.ListToJSONArray(eicMapper.Chapter3(RandomNumberUtil.RandomNumberToStr(240, 20)));
 	}
 
 }

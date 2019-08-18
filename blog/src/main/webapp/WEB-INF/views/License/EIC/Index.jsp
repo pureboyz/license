@@ -22,8 +22,8 @@
 			</button>
 			<ul class="dropdown-menu pull-right" aria-labelledby="about-us">
 				<li><a href="#">디지털전자회로</a></li>
-				<li><a href="/License/EIC/Chapter2">정보통신시스템</a></li>
-				<li><a href="#">정보통신기기</a></li>
+				<li><a href="#">정보통신시스템</a></li>
+				<li><a href="/License/EIC/Chapter3">정보통신기기</a></li>
 				<li><a href="#">정보전송공학</a></li>
 				<li><a href="#">전자계산기일반 및 정보설비기준</a></li>
 			</ul>
@@ -58,142 +58,122 @@
 				<tr>
 					<td>20</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>19</td>
 					<td>전자계산기일반 및 정보설비기준</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>18</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>17</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>16</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>15</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>14</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>13</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>12</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>11</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>10</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>9</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>8</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>7</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>6</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>5</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>4</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>3</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>2</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 				<tr>
 					<td>1</td>
 					<td>정보통신기기</td>
-<!-- 					<td>O X O X O X O X O X O X O X O X O X O X</td> -->
 					<td>50</td>
-					<td>2019-08-15 <span class="small">18:00</span></td>
+					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
 				</tr>
 			</tbody>
 		</table>

@@ -10,7 +10,7 @@ $(document).ready(function(){
 	
 	// Chapter2 문제 리스트 가져오기.
 	$.ajax({
-		 url : "/License/EIC/Chapter2/getQuestionList"
+		 url : "/License/EIC/Chapter3/getQuestionList"
 		,type : "POST"
 		,dataType : "json"
 		,success : function(data){

@@ -12,8 +12,8 @@ public interface EICMapper
 {
 
 	/**
-	 * Chapter2 20문제를 가져온다.
+	 * Chapter3 20문제를 가져온다.
 	 */
-	List<Map<String, Object>> Chapter2(String seqStr);
+	List<Map<String, Object>> Chapter3(String seqStr);
 
 }

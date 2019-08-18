@@ -28,25 +28,25 @@ public class EICAct
 	}
 	
 	/**
-	 * Chapter2 문제 풀기 페이지
+	 * Chapter3 문제 풀기 페이지
 	 */
-	@RequestMapping("/Chapter2")
+	@RequestMapping("/Chapter3")
 	public String Chapter2(Model model)
 	{
-		return "/License/EIC/Chapter2";
+		return "/License/EIC/Chapter3";
 	}
 	
 	/**
-	 * Chapter2 문제 리스트
+	 * Chapter3 문제 리스트
 	 */
-	@RequestMapping("/Chapter2/getQuestionList")
+	@RequestMapping("/Chapter3/getQuestionList")
 	public @ResponseBody JSONArray getQuestionList()
 	{
-		return eicService.Chapter2();
+		return eicService.Chapter3();
 	}
 	
 	/**
-	 * Chapter2 Test 종료
+	 * Chapter3 Test 종료
 	 */
 	@RequestMapping("/Chapter2/TestComplete")
 	public String TestComplete(HttpServletRequest request)
