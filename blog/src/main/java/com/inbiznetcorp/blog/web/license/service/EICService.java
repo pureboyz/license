@@ -5,6 +5,7 @@ import javax.annotation.Resource;
 import org.json.simple.JSONArray;
 import org.springframework.stereotype.Service;
 
+import com.inbiznetcorp.blog.DTO.QuestionListDTO;
 import com.inbiznetcorp.blog.Util.JsonUtil;
 import com.inbiznetcorp.blog.Util.RandomNumberUtil;
 import com.inbiznetcorp.blog.mapper.license.EICMapper;
@@ -16,11 +17,14 @@ public class EICService
 	EICMapper eicMapper;
 
 	/**
-	 * Chapter3 20문제를 가져온다.
+	 * 20문제를 가져온다.
 	 */
-	public JSONArray Chapter3()
+	public JSONArray getQuestionList(String chapter)
 	{
-		return JsonUtil.ListToJSONArray(eicMapper.Chapter3(RandomNumberUtil.RandomNumberToStr(240, 20)));
+		QuestionListDTO dto = new QuestionListDTO();
+		dto.setChapter("CHAPTER"+chapter);
+		dto.setSeq(RandomNumberUtil.RandomNumberToStr(eicMapper.CountOfChapter(chapter), 20));
+		return JsonUtil.ListToJSONArray(eicMapper.getQuestionList(dto));
 	}
 
 }

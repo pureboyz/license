@@ -22,8 +22,8 @@
 			</button>
 			<ul class="dropdown-menu pull-right" aria-labelledby="about-us">
 				<li><a href="#">디지털전자회로</a></li>
-				<li><a href="#">정보통신시스템</a></li>
-				<li><a href="/License/EIC/Chapter3">정보통신기기</a></li>
+				<li><a href="/License/EIC/Test?chapter=2">정보통신시스템</a></li>
+				<li><a href="/License/EIC/Test?chapter=3">정보통신기기</a></li>
 				<li><a href="#">정보전송공학</a></li>
 				<li><a href="#">전자계산기일반 및 정보설비기준</a></li>
 			</ul>

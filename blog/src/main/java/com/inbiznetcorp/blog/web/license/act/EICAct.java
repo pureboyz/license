@@ -28,27 +28,31 @@ public class EICAct
 	}
 	
 	/**
-	 * Chapter3 문제 풀기 페이지
+	 * 문제 풀기 페이지
 	 */
-	@RequestMapping("/Chapter3")
-	public String Chapter2(Model model)
+	@RequestMapping("/Test")
+	public String Test(HttpServletRequest request, Model model)
 	{
-		return "/License/EIC/Chapter3";
+		model.addAttribute("chapter", request.getParameter("chapter"));
+		
+		return "/License/EIC/Test";
 	}
 	
 	/**
-	 * Chapter3 문제 리스트
+	 * 문제 리스트
 	 */
-	@RequestMapping("/Chapter3/getQuestionList")
-	public @ResponseBody JSONArray getQuestionList()
+	@RequestMapping("/Test/getQuestionList")
+	public @ResponseBody JSONArray getQuestionList(HttpServletRequest request)
 	{
-		return eicService.Chapter3();
+		String chapter = request.getParameter("chapter");
+		
+		return eicService.getQuestionList(chapter);
 	}
 	
 	/**
-	 * Chapter3 Test 종료
+	 * Test 종료
 	 */
-	@RequestMapping("/Chapter2/TestComplete")
+	@RequestMapping("/Test/TestComplete")
 	public String TestComplete(HttpServletRequest request)
 	{
 		System.out.println(request.getParameter("subject"));

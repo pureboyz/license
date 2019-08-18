@@ -6,14 +6,20 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import com.inbiznetcorp.blog.DTO.QuestionListDTO;
+
 @Mapper
 @Repository("com.inbiznetcorp.blog.mapper.license.EICMapper")
 public interface EICMapper
 {
+	/**
+	 * 해당 Chapter의 총 문제 갯수를 가져온다.
+	 */
+	int CountOfChapter(String chapter);
 
 	/**
-	 * Chapter3 20문제를 가져온다.
+	 * 해당 Chapter의 20문제를 가져온다.
 	 */
-	List<Map<String, Object>> Chapter3(String seqStr);
+	List<Map<String, Object>> getQuestionList(QuestionListDTO dto);
 
 }

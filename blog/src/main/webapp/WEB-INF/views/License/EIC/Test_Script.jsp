@@ -3,16 +3,28 @@
 $(document).ready(function(){
 	$(".scoring").hide();
 	
-	var questionList 	= new Array();	// Chapter2 문제 리스트
+	var chapter 		= "${chapter}";	// Chapter 번호
+	
+		 if(chapter == 1) { $("h2").text("디지털전자회로"); }
+	else if(chapter == 2) { $("h2").text("정보통신시스템"); }
+	else if(chapter == 3) { $("h2").text("정보통신기기"); }
+	else if(chapter == 3) { $("h2").text("정보전송공학"); }
+	else if(chapter == 3) { $("h2").text("전자계산기일반 및 정보설비기준"); }
+	
+	
+	var questionList 	= new Array();	// 문제 리스트
 	var indexValue 		= 0;			// 현재 문제의 index번호
 	var score 			= 0;			// 점수
 	var questionNumber  = "";			// 문제 번호
 	
-	// Chapter2 문제 리스트 가져오기.
+	// 문제 리스트 가져오기.
 	$.ajax({
-		 url : "/License/EIC/Chapter3/getQuestionList"
+		 url : "/License/EIC/Test/getQuestionList"
 		,type : "POST"
 		,dataType : "json"
+		,data : {
+			"chapter" : chapter
+		}
 		,success : function(data){
 			questionList = data;
 			
@@ -69,6 +81,7 @@ $(document).ready(function(){
 		{
 			// replace('A', 'B') 한번만 치환 -> replace(/A/gi, 'B') replaceAll처럼 모두 치환
 			// 정규식 gi : g는 발생할 모든 패턴을 검색, i는 대소문자를 구분안함
+			$("[name=subject]").val(chapter);
 			$("[name=questionNumber]").val(questionNumber.trim().replace(/ /gi, ","));
 			$("[name=score]").val(score);
 			$("[name=formComplete]").submit();

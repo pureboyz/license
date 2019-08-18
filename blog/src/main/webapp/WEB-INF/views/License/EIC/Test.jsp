@@ -29,7 +29,7 @@
 				<!-- //TEST 취소 버튼 -->
 				
 				<!-- title -->
-				<h2>정보통신기기</h2>
+				<h2></h2>
 				<!-- //title -->
 				
 				<hr/>
@@ -90,8 +90,8 @@
 		</div>
 		
 		<!-- 테스트 종료 시 실행되는 form -->
-		<form action="/License/EIC/Chapter2/TestComplete" method="POST" name="formComplete">
-			<input type="hidden" name="subject" value="정보통신시스템" />
+		<form action="/License/EIC/Test/TestComplete" method="POST" name="formComplete">
+			<input type="hidden" name="subject" value="" />
 			<input type="hidden" name="score" value="" />
 			<input type="hidden" name="questionNumber" value="" />
 		</form>
@@ -101,4 +101,4 @@
 	
 </html>
 
-<%@include file="/WEB-INF/views/License/EIC/Chapter3_Script.jsp"%>
+<%@include file="/WEB-INF/views/License/EIC/Test_Script.jsp"%>
