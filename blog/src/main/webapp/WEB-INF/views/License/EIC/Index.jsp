@@ -36,9 +36,9 @@
 		<table class="table table-striped">
 			<colgroup>
 				<col width="15%" />
-				<col width="50%" />
+				<col width="45%" />
 				<col width="15%" />
-				<col width="20%" />
+				<col width="25%" />
 <!-- 				<col width="7%" /> -->
 <!-- 				<col width="18%" /> -->
 <!-- 				<col width="45%" /> -->

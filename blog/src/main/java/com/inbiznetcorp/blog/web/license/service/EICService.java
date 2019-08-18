@@ -20,7 +20,7 @@ public class EICService
 	 */
 	public JSONArray Chapter2()
 	{
-		return JsonUtil.ListToJSONArray(eicMapper.Chapter2(RandomNumberUtil.RanNumToStr20inRange(240)));
+		return JsonUtil.ListToJSONArray(eicMapper.Chapter2(RandomNumberUtil.RandomNumberToStr(240, 20)));
 	}
 
 }
