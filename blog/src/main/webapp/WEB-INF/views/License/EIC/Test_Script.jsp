@@ -79,12 +79,18 @@ $(document).ready(function(){
 		}
 		else if(indexValue >= 20)
 		{
-			// replace('A', 'B') 한번만 치환 -> replace(/A/gi, 'B') replaceAll처럼 모두 치환
-			// 정규식 gi : g는 발생할 모든 패턴을 검색, i는 대소문자를 구분안함
-			$("[name=subject]").val(chapter);
-			$("[name=questionNumber]").val(questionNumber.trim().replace(/ /gi, ","));
-			$("[name=score]").val(score);
-			$("[name=formComplete]").submit();
+			var comment = score + "점!";
+			
+			if(score < 40)
+			{comment += " <br/><br/> 과락입니다..";}
+			else if(score < 60)
+			{comment += " <br/><br/> 불합격입니다..";}
+			else
+			{comment += " <br/><br/> 합격입니다!!";}
+			
+			$(".modal-body").find("span").html(comment);
+			$("#btnModal").click();
+			
 			return false;
 		}
 		
@@ -97,6 +103,16 @@ $(document).ready(function(){
 		$("#answer").val(questionList[indexValue].answer);
 		
 		questionNumber += questionList[indexValue].seq+" ";
+	});
+	
+	// 점수확인 modal 창에서 확인 버튼 클릭 시
+	$("#btnSubmit").click(function(){
+		// replace('A', 'B') 한번만 치환 -> replace(/A/gi, 'B') replaceAll처럼 모두 치환
+		// 정규식 gi : g는 발생할 모든 패턴을 검색, i는 대소문자를 구분안함
+		$("[name=subject]").val(chapter);
+		$("[name=questionNumber]").val(questionNumber.trim().replace(/ /gi, ","));	// 공백을 콤마로 변경.
+		$("[name=score]").val(score);
+		$("[name=formComplete]").submit();
 	});
 	
 	

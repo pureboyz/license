@@ -14,6 +14,7 @@
 	    	.examples { max-width:800px; height:60px; }
 	    	.pointer { cursor:pointer; }
 	    	#scoring { color:#ff0000; }
+	    	.no-drag { -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
 	    </style>
 	  
 	</head>
@@ -36,7 +37,7 @@
 				<br/>
 				
 				<!-- 문제 -->
-				<div class="container">
+				<div class="container no-drag">
 					<div class="container-fluid">
 						<input type="hidden" id="answer" value="" />
 						<span id="roading">문제를 불러오고 있습니다..</span>
@@ -96,6 +97,37 @@
 			<input type="hidden" name="questionNumber" value="" />
 		</form>
 		<!-- //테스트 종료 시 실행되는 form -->
+		
+		<!-- Modal 실행 버튼 -->
+		<input type="button" class="btn btn-primary" id="btnModal" data-toggle="modal" style="display:none;" data-target="#myModal"/>
+		<!-- //Modal 실행 버튼 -->
+		        
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				
+					<!-- Modal Title -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">♠ 점수 확인 ♠</h4>
+					</div>
+					<!-- //Modal Title -->
+					
+					<!-- Modal Comment -->
+					<div class="modal-body"><span></span></div>
+					<!-- //Modal Comment -->
+					
+					<!-- Modal Button -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info btn-simple" id="btnSubmit">확인</button>
+					</div>
+					<!-- //Modal Button -->
+					
+				</div>
+			</div>
+		</div>
+		<!-- //Modal -->
 		
 	</body>
 	
