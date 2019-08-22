@@ -10,8 +10,8 @@
 	    
 	    <style>
 	    	html { overflow-y:scroll; }
-	    	.row { max-width:800px; height:75px; }
-	    	.examples { max-width:800px; height:60px; }
+	    	.question { max-width:800px; min-height:75px; }
+	    	.examples { max-width:800px; min-height:60px; }
 	    	.pointer { cursor:pointer; }
 	    	#scoring { color:#ff0000; }
 	    	.no-drag { -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
@@ -43,7 +43,7 @@
 						<span id="roading">문제를 불러오고 있습니다..</span>
 						
 						<!-- 문제 -->
-						<div class="row">
+						<div class="row question">
 							<div class="col-md-12">
 								<span id="question"></span>
 							</div>
@@ -74,7 +74,7 @@
 						<!-- //보기 -->
 						
 						<!-- 채점부분 -->
-						<div class="row scoring">
+						<div class="row scoring" style="max-width:800px;">
 							<div class="col-md-6">
 								<span id="scoring"></span>
 							</div>

@@ -3,14 +3,14 @@ package com.inbiznetcorp.blog.Util;
 public class RandomNumberUtil
 {
 	/**
-     * 1부터 range까지 중 랜덤으로 amount개의 숫자를 뽑아 String 형태로 반환한다.
+     * 1부터 range까지 중 랜덤으로 amount개의 숫자를 뽑아 separator를 구분자로하는 String 형태로 반환한다.
      * 
-     * 1. SELECT문에서 여러개의 SEQ 값으로 검색할 때 사용하려고 만듦. 2019.08.17
+     * 
      *
      * @param int
      * @return String
      */
-	public static String RandomNumberToStr(int range, int amount)
+	public static String RandomNumberToStr(int range, int amount, String separator)
 	{
 		String 	numberStr 	= "";	// 랜덤으로 뽑은 amount개의 숫자가 담기는 문자열.
 		int 	cnt 		= 1;	// cnt = amount가 되면 isRun을 false로 변경하여 숫자 뽑기 종료.
@@ -32,7 +32,7 @@ public class RandomNumberUtil
 				}
 				else
 				{
-					numberStr += number+",";
+					numberStr += ( number + separator );
 					cnt++;
 				}
 			}

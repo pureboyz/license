@@ -1,6 +1,6 @@
-package com.inbiznetcorp.blog.DTO;
+package com.inbiznetcorp.blog.VO;
 
-public class QuestionListDTO
+public class QuestionListVO
 {
 	String chapter 	= "";
 	String seq 		= "";

@@ -12,7 +12,7 @@
 	</select>
 
 	<!-- 해당 Chapter의 20문제를 가져온다. -->
-	<select id="getQuestionList" parameterType="com.inbiznetcorp.blog.DTO.QuestionListDTO" resultType="hashmap">
+	<select id="getQuestionList" parameterType="com.inbiznetcorp.blog.VO.QuestionListVO" resultType="hashmap">
 		SELECT
 			 SEQ
 			,QUESTION

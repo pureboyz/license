@@ -1,6 +1,44 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <script>
+function showQuestions(chapter, questionList, indexValue, chapterSeqArr){
+	console.log("chapter 		: ", chapter);
+	console.log("indexValue 	: ", indexValue);
+	console.log("chapterSeqArr 	: ", chapterSeqArr);
+	console.log("chapterSeqArr.indexOf(String(questionList[0].seq) : ", chapterSeqArr.indexOf(String(questionList[0].seq)));
+	// 사진이 있는 문제는 사진도 추가
+	if(chapterSeqArr.indexOf(String(questionList[0].seq)) > -1)
+	{
+		// replace('A', 'B') 한번만 치환 -> replace(/A/gi, 'B') replaceAll처럼 모두 치환
+		// 정규식 gi : g는 발생할 모든 패턴을 검색, i는 대소문자를 구분안함
+		$("#question").html("문제 "+parseInt(indexValue+1)+") " + questionList[indexValue].question.replace(/\n/gi, "<br/>") + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter'+chapter+'/SEQ'+questionList[indexValue].seq+'_0.png"/><br/><br/><br/>');
+	}
+	else
+	{
+		$("#question").html("문제 "+parseInt(indexValue+1)+") " + questionList[indexValue].question.replace(/\n/gi, "<br/>"));
+	}
+
+	// 보기가 없으면 사진으로 대체
+	if(questionList[0].example1 === undefined)
+	{
+		$("#example1").html('1) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_1.png"/>');
+		$("#example2").html('2) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_2.png"/>');
+		$("#example3").html('3) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_3.png"/>');
+		$("#example4").html('4) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_4.png"/>');
+	}
+	else
+	{
+		$("#example1").html("1) " + questionList[indexValue].example1);
+		$("#example2").html("2) " + questionList[indexValue].example2);
+		$("#example3").html("3) " + questionList[indexValue].example3);
+		$("#example4").html("4) " + questionList[indexValue].example4);
+	}
+	
+	// 정답
+	$("#answer").val(questionList[indexValue].answer);
+}
+
 $(document).ready(function(){
+	// 정답부분 숨김.
 	$(".scoring").hide();
 	
 	var chapter 		= "${chapter}";	// Chapter 번호
@@ -8,14 +46,19 @@ $(document).ready(function(){
 		 if(chapter == 1) { $("h2").text("디지털전자회로"); }
 	else if(chapter == 2) { $("h2").text("정보통신시스템"); }
 	else if(chapter == 3) { $("h2").text("정보통신기기"); }
-	else if(chapter == 3) { $("h2").text("정보전송공학"); }
-	else if(chapter == 3) { $("h2").text("전자계산기일반 및 정보설비기준"); }
+	else if(chapter == 4) { $("h2").text("정보전송공학"); }
+	else if(chapter == 5) { $("h2").text("전자계산기일반 및 정보설비기준"); }
 	
+	// 질문에 사진이 있는 문제의 seq값을 담은 배열.
+	var chapter1SeqArr = [];
+	var chapter2SeqArr = [];
+	var chapter3SeqArr = [];
+	var chapter4SeqArr = ["21", "218", "225", "289"];
+	var chapter5SeqArr = [];
 	
 	var questionList 	= new Array();	// 문제 리스트
 	var indexValue 		= 0;			// 현재 문제의 index번호
 	var score 			= 0;			// 점수
-	var questionNumber  = "";			// 문제 번호
 	
 	// 문제 리스트 가져오기.
 	$.ajax({
@@ -31,14 +74,7 @@ $(document).ready(function(){
 			$("#roading").hide();	// '문제를 불러오고 있습니다..' 문구 숨김.
 			
 			// 첫번째 문제 show.
-			$("#question").text("문제 1) " + questionList[0].question);
-			$("#example1").text("1) " + questionList[0].example1);
-			$("#example2").text("2) " + questionList[0].example2);
-			$("#example3").text("3) " + questionList[0].example3);
-			$("#example4").text("4) " + questionList[0].example4);
-			$("#answer").val(questionList[0].answer);
-			
-			questionNumber += questionList[0].seq+" ";
+			showQuestions(chapter, questionList, indexValue, chapter4SeqArr);
 		}
 	});
 	
@@ -73,6 +109,7 @@ $(document).ready(function(){
 		indexValue += 1;
 
 		$(".scoring").hide();	// 채점부분 숨김.
+		
 		if(indexValue == 19)
 		{
 			$("#btnNext").text("종료");
@@ -81,13 +118,6 @@ $(document).ready(function(){
 		{
 			var comment = score + "점!";
 			
-			if(score < 40)
-			{comment += " <br/><br/> 과락입니다..";}
-			else if(score < 60)
-			{comment += " <br/><br/> 불합격입니다..";}
-			else
-			{comment += " <br/><br/> 합격입니다!!";}
-			
 			$(".modal-body").find("span").html(comment);
 			$("#btnModal").click();
 			
@@ -95,22 +125,12 @@ $(document).ready(function(){
 		}
 		
 		// 다음 문제 show.
-		$("#question").text("문제 "+parseInt(indexValue+1)+") " + questionList[indexValue].question);
-		$("#example1").text("1) " + questionList[indexValue].example1);
-		$("#example2").text("2) " + questionList[indexValue].example2);
-		$("#example3").text("3) " + questionList[indexValue].example3);
-		$("#example4").text("4) " + questionList[indexValue].example4);
-		$("#answer").val(questionList[indexValue].answer);
-		
-		questionNumber += questionList[indexValue].seq+" ";
+		showQuestions(chapter, questionList, indexValue, chapter4SeqArr);
 	});
 	
 	// 점수확인 modal 창에서 확인 버튼 클릭 시
 	$("#btnSubmit").click(function(){
-		// replace('A', 'B') 한번만 치환 -> replace(/A/gi, 'B') replaceAll처럼 모두 치환
-		// 정규식 gi : g는 발생할 모든 패턴을 검색, i는 대소문자를 구분안함
 		$("[name=subject]").val(chapter);
-		$("[name=questionNumber]").val(questionNumber.trim().replace(/ /gi, ","));	// 공백을 콤마로 변경.
 		$("[name=score]").val(score);
 		$("[name=formComplete]").submit();
 	});
