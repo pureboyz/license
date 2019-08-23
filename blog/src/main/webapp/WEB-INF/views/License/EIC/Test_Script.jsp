@@ -20,10 +20,10 @@ function showQuestions(chapter, questionList, indexValue, chapterSeqArr){
 	// 보기가 없으면 사진으로 대체
 	if(questionList[0].example1 === undefined)
 	{
-		$("#example1").html('1) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_1.png"/>');
-		$("#example2").html('2) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_2.png"/>');
-		$("#example3").html('3) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_3.png"/>');
-		$("#example4").html('4) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter4/SEQ'+questionList[indexValue].seq+'_4.png"/>');
+		$("#example1").html('1) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter'+chapter+'/SEQ'+questionList[indexValue].seq+'_1.png"/>');
+		$("#example2").html('2) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter'+chapter+'/SEQ'+questionList[indexValue].seq+'_2.png"/>');
+		$("#example3").html('3) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter'+chapter+'/SEQ'+questionList[indexValue].seq+'_3.png"/>');
+		$("#example4").html('4) ' + '<img src="${pageContext.request.contextPath}/resources/Images/Chapter'+chapter+'/SEQ'+questionList[indexValue].seq+'_4.png"/>');
 	}
 	else
 	{
@@ -42,19 +42,13 @@ $(document).ready(function(){
 	$(".scoring").hide();
 	
 	var chapter 		= "${chapter}";	// Chapter 번호
+	var chapterSeqArr 	= [];			// 질문에 사진이 있는 문제의 seq값을 담dmf 배열.
 	
-		 if(chapter == 1) { $("h2").text("디지털전자회로"); }
-	else if(chapter == 2) { $("h2").text("정보통신시스템"); }
-	else if(chapter == 3) { $("h2").text("정보통신기기"); }
-	else if(chapter == 4) { $("h2").text("정보전송공학"); }
-	else if(chapter == 5) { $("h2").text("전자계산기일반 및 정보설비기준"); }
-	
-	// 질문에 사진이 있는 문제의 seq값을 담은 배열.
-	var chapter1SeqArr = [];
-	var chapter2SeqArr = [];
-	var chapter3SeqArr = [];
-	var chapter4SeqArr = ["21", "218", "225", "289"];
-	var chapter5SeqArr = [];
+		 if(chapter == 1) { $("h2").text("디지털전자회로"); 				chapterSeqArr = []; }
+	else if(chapter == 2) { $("h2").text("정보통신시스템"); 				chapterSeqArr = []; }
+	else if(chapter == 3) { $("h2").text("정보통신기기"); 				chapterSeqArr = []; }
+	else if(chapter == 4) { $("h2").text("정보전송공학"); 				chapterSeqArr = ["21", "218", "225", "289"]; }
+	else if(chapter == 5) { $("h2").text("전자계산기일반 및 정보설비기준"); 	chapterSeqArr = ["25", "30", "62", "88", "130", "141", "204", "208", "264", "265", "269"]; }
 	
 	var questionList 	= new Array();	// 문제 리스트
 	var indexValue 		= 0;			// 현재 문제의 index번호
@@ -74,7 +68,7 @@ $(document).ready(function(){
 			$("#roading").hide();	// '문제를 불러오고 있습니다..' 문구 숨김.
 			
 			// 첫번째 문제 show.
-			showQuestions(chapter, questionList, indexValue, chapter4SeqArr);
+			showQuestions(chapter, questionList, indexValue, chapterSeqArr);
 		}
 	});
 	
