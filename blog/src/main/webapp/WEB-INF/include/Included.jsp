@@ -8,7 +8,7 @@
 <link href="/bootstrap3/css/bootstrap.css?20190816_001" rel="stylesheet" />
 <link href="/bootstrap3/css/font-awesome.css" rel="stylesheet" />
    
-<link href="/assets/css/gsdk.css?20190815_002" rel="stylesheet" />   
+<link href="/assets/css/gsdk.css?20190823_001" rel="stylesheet" />   
 <link href="/assets/css/demo.css?20190815_001" rel="stylesheet" /> 
 
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">

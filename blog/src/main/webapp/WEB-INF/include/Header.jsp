@@ -23,7 +23,8 @@
 			<div id="navbar">
 	
 				<!-- navigation -->
-				<nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
+				<nav class="navbar navbar-ct-black navbar-transparent navbar-fixed-top" role="navigation">
+<!-- 				<nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation"> -->
 					<div class="container">
 					
 						<div class="navbar-header">
