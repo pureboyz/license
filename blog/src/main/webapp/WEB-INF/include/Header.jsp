@@ -10,6 +10,7 @@
 		<meta name="description" content="Pureboyz Life Log">
 		
 		<meta name="naver-site-verification" content="0ed099d15a3528dd58ca528f8804d50ed5cec2a8"/>
+		<link rel="canonical" href="http://pureboyz.ml:7901/index.html">
 		
 		<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
 		<link rel="icon" type="image/png" href="/assets/img/favicon.png">

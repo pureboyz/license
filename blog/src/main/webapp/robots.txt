@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap:http://www.pureboyz.ml:7901/sitemap.xml
