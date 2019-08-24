@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.inbiznetcorp.blog.VO.TestHistoryVO;
 import com.inbiznetcorp.blog.web.license.service.EICService;
 
 @Controller
@@ -22,8 +23,10 @@ public class EICAct
 	 * 정보통신기사 페이지
 	 */
 	@RequestMapping(value = {"", "/", "/Index"})
-	public String EIC()
+	public String EIC(Model model)
 	{
+		model.addAttribute("history", eicService.getHistory());
+		
 		return "/License/EIC/Index";
 	}
 	
@@ -55,9 +58,14 @@ public class EICAct
 	@RequestMapping("/Test/TestComplete")
 	public String TestComplete(HttpServletRequest request)
 	{
-		System.out.println(request.getParameter("subject"));
-		System.out.println(request.getParameter("score"));
-		System.out.println(request.getParameter("questionNumber"));
+		TestHistoryVO vo = new TestHistoryVO();
+		vo.setLicense("EIC");
+		vo.setSubject((String) request.getParameter("subject"));
+		vo.setScore(Integer.parseInt(request.getParameter("score")));
+		
+		// TEST 종료 후 이력추가.
+		eicService.TestComplete(vo);
+		
 		return "redirect:/License/EIC/Index";
 	}
 	

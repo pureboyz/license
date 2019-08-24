@@ -1,10 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <script>
 function showQuestions(chapter, questionList, indexValue, chapterSeqArr){
-	console.log("chapter 		: ", chapter);
-	console.log("indexValue 	: ", indexValue);
-	console.log("chapterSeqArr 	: ", chapterSeqArr);
-	console.log("chapterSeqArr.indexOf(String(questionList[0].seq) : ", chapterSeqArr.indexOf(String(questionList[0].seq)));
 	// 사진이 있는 문제는 사진도 추가
 	if(chapterSeqArr.indexOf(String(questionList[0].seq)) > -1)
 	{
@@ -124,7 +120,15 @@ $(document).ready(function(){
 	
 	// 점수확인 modal 창에서 확인 버튼 클릭 시
 	$("#btnSubmit").click(function(){
-		$("[name=subject]").val(chapter);
+		var subject = "";
+		
+			 if(chapter == 1) { subject = "디지털전자회로"; }
+		else if(chapter == 2) { subject = "정보통신시스템"; }
+		else if(chapter == 3) { subject = "정보통신기기"; }
+		else if(chapter == 4) { subject = "정보전송공학"; }
+		else if(chapter == 5) { subject = "전자계산기일반 및 정보설비기준"; }
+			 
+		$("[name=subject]").val(subject);
 		$("[name=score]").val(score);
 		$("[name=formComplete]").submit();
 	});

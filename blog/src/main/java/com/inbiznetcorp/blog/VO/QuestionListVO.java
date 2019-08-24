@@ -2,8 +2,8 @@ package com.inbiznetcorp.blog.VO;
 
 public class QuestionListVO
 {
-	String chapter 	= "";
-	String seq 		= "";
+	String chapter 	= "";	// 과목번호
+	String seq 		= "";	// 문제번호
 	
 	public String getChapter() {
 		return chapter;

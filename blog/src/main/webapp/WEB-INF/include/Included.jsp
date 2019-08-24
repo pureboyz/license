@@ -3,10 +3,12 @@
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
 
-<link href="/bootstrap3/css/bootstrap.css?20190816_001" rel="stylesheet" />
+<!-- bootstrap.css -->
+<link href="/bootstrap3/css/bootstrap.css?20190824_003" rel="stylesheet" />
 <link href="/bootstrap3/css/font-awesome.css" rel="stylesheet" />
-   
-<link href="/assets/css/gsdk.css?20190823_001" rel="stylesheet" />   
+
+<!-- gsdk.css -->
+<link href="/assets/css/gsdk.css?20190824_001" rel="stylesheet" />   
 <link href="/assets/css/demo.css?20190815_001" rel="stylesheet" /> 
 
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -20,5 +22,10 @@
 <script src="/assets/js/gsdk-radio.js"></script>
 <script src="/assets/js/gsdk-bootstrapswitch.js"></script>
 <script src="/assets/js/get-shit-done.js"></script>
+
+<!-- summernote -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+<!-- //summernote -->
 
 <script src="/assets/js/custom.js"></script>

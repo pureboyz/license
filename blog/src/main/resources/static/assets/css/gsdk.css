@@ -1471,7 +1471,7 @@ input.ct-red + span + label + span.switch-right {
   color: #777777; }
 
 .pagination > li.active > a, .pagination > li.active > span, .pagination > li.active > a:hover, .pagination > li.active > span:hover, .pagination > li.active > a:focus, .pagination > li.active > span:focus {
-  background-color: #2CA8FF;
+  background-color: #54585b;
   border: 0;
   color: #FFFFFF;
   padding: 7px 13px; }

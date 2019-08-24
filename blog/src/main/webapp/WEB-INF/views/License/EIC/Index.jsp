@@ -1,9 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/include/Header.jsp"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ include file="/WEB-INF/include/Header.jsp" %>
 
 <!-- 정보통신기사 -->
 <div class="main">
-	<div class="container tim-container" style="max-width:800px; padding-top:100px">
+	<div class="container tim-container" style="max-width:800px; padding-top:100px; min-height:870px;">
 	
 		<!-- Title -->
 		<div class="tim-title">
@@ -39,142 +42,24 @@
 				<col width="45%" />
 				<col width="15%" />
 				<col width="25%" />
-<!-- 				<col width="7%" /> -->
-<!-- 				<col width="18%" /> -->
-<!-- 				<col width="45%" /> -->
-<!-- 				<col width="10%" /> -->
-<!-- 				<col width="20%" /> -->
 			</colgroup>
 			<thead>
 				<tr>
 					<th>회차</th>
 					<th>과목</th>
-<!-- 					<th>내용</th> -->
 					<th>점수</th>
 					<th>날짜</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>20</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>19</td>
-					<td>전자계산기일반 및 정보설비기준</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>18</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>17</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>16</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>15</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>14</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>13</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>12</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>11</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>9</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>정보통신기기</td>
-					<td>50</td>
-					<td>2019-08-15 <span class="small" style="color:#ccc;">18:00</span></td>
-				</tr>
+				<c:forEach items="${history}" var="history">
+					<tr>
+						<td>${history.SEQ}</td>
+						<td>${history.SUBJECT}</td>
+						<td>${history.SCORE}</td>
+						<td>${history.CREATEDATE} <span class="small" style="color:#ccc;">${history.CREATETIME}</span></td>
+					</tr>
+				</c:forEach>
 			</tbody>
 		</table>
 		<!-- //이력 테이블 -->
@@ -190,7 +75,7 @@
 				<li><a href="#">1</a></li>
 				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
-				<li class="disabled"><a href="#">4</a></li>
+				<li class="disabled active"><a href="#">4</a></li>
 				<li><a href="#">5</a></li>
 				<li><a href="#">6</a></li>
 				<li><a href="#">7</a></li>

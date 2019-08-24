@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.inbiznetcorp.blog.mapper.raspberry.RaspberryMapper">
+
+	<select id="BoardList" parameterType="String" resultType="hashmap">
+		SELECT
+			 SEQ
+			,TITLE
+			,COMMENTS
+			,BOARDNAME
+			,DATE_FORMAT(CREATEDATE, '%Y-%m-%d') AS CREATEDATE
+			,DATE_FORMAT(CREATEDATE, '%H:%i:%s') AS CREATETIME
+		FROM
+			BOARD
+		WHERE 1=1
+			AND BOARDNAME = #{value}
+	</select>
+	
+	<insert id="WriteSubmit" parameterType="com.inbiznetcorp.blog.VO.BoardVO">
+		INSERT INTO
+			BOARD
+		(
+			 TITLE
+			,COMMENTS
+			,BOARDNAME
+			,CREATEDATE
+		)
+		VALUES
+		(
+			 #{title}
+			,#{comments}
+			,#{boardname}
+			,now()
+		)
+	</insert>
+	
+</mapper>

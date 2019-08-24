@@ -3960,7 +3960,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .input-group-addon {
-  padding: 6px 12px;
+  padding: 6px 50px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
@@ -5620,6 +5620,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel {
+  padding-bottom: 25px;
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid transparent;
@@ -5630,6 +5631,7 @@ a.list-group-item.active:focus .list-group-item-text {
 
 .panel-body {
   padding: 15px;
+  text-align: center;
 }
 
 .panel-body:before,
@@ -5748,6 +5750,7 @@ a.list-group-item.active:focus .list-group-item-text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
+  text-align: center;
 }
 
 .panel-title > a {
