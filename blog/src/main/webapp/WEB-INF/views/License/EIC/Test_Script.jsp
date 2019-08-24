@@ -44,7 +44,7 @@ $(document).ready(function(){
 	var chapter 		= "${chapter}";	// Chapter 번호
 	var chapterSeqArr 	= [];			// 질문에 사진이 있는 문제의 seq값을 담dmf 배열.
 	
-		 if(chapter == 1) { $("h2").text("디지털전자회로"); 				chapterSeqArr = []; }
+		 if(chapter == 1) { $("h2").text("디지털전자회로"); 				chapterSeqArr = ["3", "7", "13", "14", "24", "35", "39", "40", "43", "49", "54", "58", "61", "63", "65", "68", "72", "75", "82", "84", "88", "92", "94", "95", "96", "99", "102", "104", "105", "108", "112", "118", "122", "123", "126", "137", "140", "141", "143", "154", "155", "156", "172", "177", "182", "184", "201", "216", "221", "225", "228", "233", "234", "237", "239", "244", "246", "254", "255", "256", "257", "261", "262", "265", "266", "267", "276", "277", "278", "281", "282", "284", "287", "293", "297", "299"]; }
 	else if(chapter == 2) { $("h2").text("정보통신시스템"); 				chapterSeqArr = []; }
 	else if(chapter == 3) { $("h2").text("정보통신기기"); 				chapterSeqArr = []; }
 	else if(chapter == 4) { $("h2").text("정보전송공학"); 				chapterSeqArr = ["21", "218", "225", "289"]; }
@@ -119,7 +119,7 @@ $(document).ready(function(){
 		}
 		
 		// 다음 문제 show.
-		showQuestions(chapter, questionList, indexValue, chapter4SeqArr);
+		showQuestions(chapter, questionList, indexValue, chapterSeqArr);
 	});
 	
 	// 점수확인 modal 창에서 확인 버튼 클릭 시
