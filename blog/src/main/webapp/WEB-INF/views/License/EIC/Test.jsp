@@ -6,6 +6,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>Pureboyz Life Log</title>
 		
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+		<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+		
 		<%@include file="/WEB-INF/include/Included.jsp"%>
 	    
 	    <style>
