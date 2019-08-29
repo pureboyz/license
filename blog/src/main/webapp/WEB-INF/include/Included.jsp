@@ -3,7 +3,15 @@
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="index,follow">
+
+<meta name="Author" content="PureBoyz Life Log">
 <meta name="description" content="PureBoyz Life Log">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PureBoyz Life Log">
+<meta property="og:description" content="PureBoyz Life Log">
+<meta property="og:image" content="http://www.pureboyz.ml:7901/assets/img/favicon.png">
+<meta property="og:url" content="http://www.pureboyz.ml:7901">
 
 <!-- bootstrap.css -->
 <link href="/bootstrap3/css/bootstrap.css?20190824_003" rel="stylesheet" />
