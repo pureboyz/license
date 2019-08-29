@@ -2,6 +2,8 @@
 
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
+<meta name="robots" content="index,follow">
+<meta name="description" content="PureBoyz Life Log">
 
 <!-- bootstrap.css -->
 <link href="/bootstrap3/css/bootstrap.css?20190824_003" rel="stylesheet" />
