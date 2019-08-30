@@ -4,6 +4,9 @@
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="index,follow">
 
+<meta name="google-site-verification" content="v6uNOGLEluFz8lKbV51v500APW4RUbHFAL51wH6LHFs" />
+<meta name="naver-site-verification" content="0ed099d15a3528dd58ca528f8804d50ed5cec2a8"/>
+
 <meta name="Author" content="PureBoyz Life Log">
 <meta name="description" content="PureBoyz Life Log">
 
