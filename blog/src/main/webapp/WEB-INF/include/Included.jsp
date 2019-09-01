@@ -5,21 +5,25 @@
 <!-- <meta name="robots" content="index,follow"> -->
 
 <!-- <meta name="google-site-verification" content="v6uNOGLEluFz8lKbV51v500APW4RUbHFAL51wH6LHFs" /> -->
-<!-- <meta name="naver-site-verification" content="0ed099d15a3528dd58ca528f8804d50ed5cec2a8"/> -->
+<meta name="naver-site-verification" content="0ed099d15a3528dd58ca528f8804d50ed5cec2a8"/>
 
 <!-- <link rel="canonical" href="http://www.pureboyz.ml:7901/WEB-INF/views/Index/Index.html"> -->
 
 <!-- <meta name="Author" content="PureBoyz Life Log"> -->
-<!-- <meta name="description" content="PureBoyz Life Log"> -->
+<meta name="description" content="PureBoyz Life Log">
 
-<!-- <meta property="og:type" content="website"> -->
-<!-- <meta property="og:title" content="PureBoyz Life Log"> -->
-<!-- <meta property="og:description" content="PureBoyz Life Log"> -->
-<!-- <meta property="og:image" content="http://www.pureboyz.ml:7901/assets/img/favicon.png"> -->
-<!-- <meta property="og:url" content="http://www.pureboyz.ml:7901"> -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="PureBoyz Life Log">
+<meta property="og:description" content="PureBoyz Life Log">
+<meta property="og:image" content="http://pureboyz.ml:7901/assets/img/favicon.png">
+<meta property="og:url" content="http://pureboyz.ml:7901">
+
+<meta name="Robots" content="INDEX, FOLLOW" />
+
+
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>Pureboyz Life Log</title>
+<title>PureBoyz Life Log</title>
 
 
 <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
