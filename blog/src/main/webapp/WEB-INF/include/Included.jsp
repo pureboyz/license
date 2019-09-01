@@ -2,19 +2,28 @@
 
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
-<meta name="robots" content="index,follow">
+<!-- <meta name="robots" content="index,follow"> -->
 
-<meta name="google-site-verification" content="v6uNOGLEluFz8lKbV51v500APW4RUbHFAL51wH6LHFs" />
-<meta name="naver-site-verification" content="0ed099d15a3528dd58ca528f8804d50ed5cec2a8"/>
+<!-- <meta name="google-site-verification" content="v6uNOGLEluFz8lKbV51v500APW4RUbHFAL51wH6LHFs" /> -->
+<!-- <meta name="naver-site-verification" content="0ed099d15a3528dd58ca528f8804d50ed5cec2a8"/> -->
 
-<meta name="Author" content="PureBoyz Life Log">
-<meta name="description" content="PureBoyz Life Log">
+<!-- <link rel="canonical" href="http://www.pureboyz.ml:7901/WEB-INF/views/Index/Index.html"> -->
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="PureBoyz Life Log">
-<meta property="og:description" content="PureBoyz Life Log">
-<meta property="og:image" content="http://www.pureboyz.ml:7901/assets/img/favicon.png">
-<meta property="og:url" content="http://www.pureboyz.ml:7901">
+<!-- <meta name="Author" content="PureBoyz Life Log"> -->
+<!-- <meta name="description" content="PureBoyz Life Log"> -->
+
+<!-- <meta property="og:type" content="website"> -->
+<!-- <meta property="og:title" content="PureBoyz Life Log"> -->
+<!-- <meta property="og:description" content="PureBoyz Life Log"> -->
+<!-- <meta property="og:image" content="http://www.pureboyz.ml:7901/assets/img/favicon.png"> -->
+<!-- <meta property="og:url" content="http://www.pureboyz.ml:7901"> -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Pureboyz Life Log</title>
+
+
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
 
 <!-- bootstrap.css -->
 <link href="/bootstrap3/css/bootstrap.css?20190824_003" rel="stylesheet" />
