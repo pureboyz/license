@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.inbiznetcorp</groupId>
 	<artifactId>blog</artifactId>
-	<version>20190901-005</version>
+	<version>20190902-001</version>
 	<packaging>war</packaging>
 	<name>blog</name>
 	<description>Demo project for Spring Boot</description>
