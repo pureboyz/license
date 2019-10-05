@@ -30,6 +30,9 @@
 <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
 <link rel="icon" type="image/png" href="/assets/img/favicon.png">
 
+<!-- pureboyz css -->
+<%@include file="/WEB-INF/include/css.jsp"%>
+
 <!-- bootstrap.css -->
 <link href="/bootstrap3/css/bootstrap.css?20190824_003" rel="stylesheet" />
 <link href="/bootstrap3/css/font-awesome.css" rel="stylesheet" />

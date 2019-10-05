@@ -11,15 +11,6 @@
 		
 		<%@include file="/WEB-INF/include/Included.jsp"%>
 	    
-	    <style>
-	    	html { overflow-y:scroll; }
-	    	.question { max-width:800px; min-height:75px; }
-	    	.examples { max-width:800px; min-height:60px; }
-	    	.pointer { cursor:pointer; }
-	    	#scoring { color:#ff0000; }
-	    	.no-drag { -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; }
-	    </style>
-	  
 	</head>
 	
 	<body>

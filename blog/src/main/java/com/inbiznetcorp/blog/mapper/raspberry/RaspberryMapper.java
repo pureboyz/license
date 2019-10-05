@@ -23,4 +23,9 @@ public interface RaspberryMapper
 	 */
 	int WriteSubmit(BoardVO vo);
 
+	/**
+	 * 가장 최신글 하나 불러온다.
+	 */
+	Map<String, Object> LatestPost(String string);
+
 }

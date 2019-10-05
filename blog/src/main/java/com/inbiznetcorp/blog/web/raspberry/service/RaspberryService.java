@@ -32,5 +32,13 @@ public class RaspberryService
 		return raspberryMapper.WriteSubmit(vo);
 	}
 
+	/**
+	 * 가장 최신글 하나 불러온다.
+	 */
+	public Map<String, Object> LatestPost(String string)
+	{
+		return raspberryMapper.LatestPost(string);
+	}
+
 
 }

@@ -6,10 +6,6 @@
 
 		<%@include file="/WEB-INF/include/Included.jsp"%>
 	    
-	    <style>
-	    	html {overflow-y:scroll;}
-	    </style>
-	  
 	</head>
 	
 	<body>

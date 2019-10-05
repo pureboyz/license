@@ -14,28 +14,22 @@
 		</div>
 		<!-- //Title -->
 		
-		<!-- 게시글 -->
-		<c:forEach items="${boardList}" var="list">
-			<div id="acordeon">
-				<div class="panel-group" id="accordion">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4 class="panel-title">
-								<a data-target="#collapseOne" href="#collapseOne" data-toggle="gsdk-collapse">
-									${list.TITLE}
-								</a>
-							</h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse">
-							<div class="panel-body">
-								${list.COMMENTS}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</c:forEach>
-		<!-- //게시글 -->
+		<div class="mt30"></div>
+		
+		<!-- 게시글 목록 -->
+		<table class="table table-striped border_b">
+			<tbody>
+				<c:forEach items="${boardList}" var="list">
+					<tr>
+						<td>
+							<span class="fl pointer">${list.TITLE}</span>
+							<span class="fr">${list.CREATEDATE}</span>
+						</td>
+					</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+		<!-- //게시글 목록 -->
 		
 		<!-- 페이징 -->
 		<nav class="text-center">
@@ -61,8 +55,18 @@
 		</nav>
 		<!-- //페이징 -->
 		
+		<div class="mt30"></div>
+		
+		<!-- 게시글 상세 -->
+		<div class="border_b text_center">
+        	<h4 id="title"></h4>
+        </div>
+        <div class="text_center" id="comments"></div>
+		<!-- //게시글 상세 -->
+		
 	</div>
 </div>
 <!-- //Raspberry Pi 메인페이지 -->
 
+<%@include file="/WEB-INF/views/Raspberry/Index_Script.jsp"%>
 <%@include file="/WEB-INF/include/Footer.jsp"%>

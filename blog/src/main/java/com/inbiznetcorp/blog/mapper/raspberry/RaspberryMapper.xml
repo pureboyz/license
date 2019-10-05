@@ -35,4 +35,20 @@
 		)
 	</insert>
 	
+	<select id="LatestPost" parameterType="String" resultType="hashmap">
+		SELECT
+			 SEQ
+			,TITLE
+			,COMMENTS
+			,BOARDNAME
+			,DATE_FORMAT(CREATEDATE, '%Y-%m-%d') AS CREATEDATE
+			,DATE_FORMAT(CREATEDATE, '%H:%i:%s') AS CREATETIME
+		FROM
+			BOARD
+		WHERE 1=1
+			AND BOARDNAME = #{value}
+		ORDER BY SEQ
+		LIMIT 1
+	</select>
+	
 </mapper>

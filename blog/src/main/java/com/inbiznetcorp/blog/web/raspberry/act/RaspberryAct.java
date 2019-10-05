@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.inbiznetcorp.blog.VO.BoardVO;
 import com.inbiznetcorp.blog.web.raspberry.service.RaspberryService;
@@ -31,6 +32,17 @@ public class RaspberryAct
 		model.addAttribute("boardList", boardList);
 		
 		return "/Raspberry/Index";
+	}
+	
+	/**
+	 * 가장 최신글 하나 불러온다.
+	 */
+	@RequestMapping(value = "getLatestBoard")
+	public @ResponseBody Map<String, Object> getLatestBoard(Model model)
+	{
+		Map<String, Object> LatestPost = raspberryService.LatestPost("Raspberry Pi");
+		
+		return LatestPost;
 	}
 	
 	/**
