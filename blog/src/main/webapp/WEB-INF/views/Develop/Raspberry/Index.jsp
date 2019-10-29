@@ -68,5 +68,5 @@
 </div>
 <!-- //Raspberry Pi 메인페이지 -->
 
-<%@include file="/WEB-INF/views/Raspberry/Index_Script.jsp"%>
+<%@include file="Index_Script.jsp"%>
 <%@include file="/WEB-INF/include/Footer.jsp"%>

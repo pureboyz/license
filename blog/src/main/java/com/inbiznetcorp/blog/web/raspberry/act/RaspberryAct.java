@@ -28,10 +28,9 @@ public class RaspberryAct
 	public String Index(Model model)
 	{
 		List<Map<String, Object>> boardList = raspberryService.BoardList("Raspberry Pi");
-		System.out.println("boardList : "+boardList);
 		model.addAttribute("boardList", boardList);
 		
-		return "/Raspberry/Index";
+		return "/Develop/Raspberry/Index";
 	}
 	
 	/**
@@ -51,7 +50,7 @@ public class RaspberryAct
 	@RequestMapping("/Write")
 	public String Write()
 	{
-		return "/Raspberry/Write";
+		return "/Develop/Raspberry/Write";
 	}
 
 	/**
@@ -62,9 +61,6 @@ public class RaspberryAct
 	{
 		String title 	= request.getParameter("title");
 		String comments = request.getParameter("comments");
-		
-		System.out.println("title 		: "+title);
-		System.out.println("comments 	: "+comments);
 		
 		BoardVO vo = new BoardVO();
 		vo.setTitle(title);

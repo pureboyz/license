@@ -2,7 +2,7 @@
 <%@include file="/WEB-INF/include/Header.jsp"%>
 
 <style>
-	.note-editable { height:630px; overflow:scroll; }
+	.note-editable { height:550px; overflow:scroll; }
 	.input-group-addon { background-color:cornsilk; }
 	#submit { margin-bottom:10px; }
 </style>
@@ -32,5 +32,5 @@
 </div>
 <!-- //Raspberry Pi 글쓰기 페이지 -->
 
-<%@include file="/WEB-INF/views/Raspberry/Write_Script.jsp"%>
+<%@include file="Write_Script.jsp"%>
 <%@include file="/WEB-INF/include/Footer.jsp"%>

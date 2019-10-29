@@ -10,6 +10,6 @@ public class VueAct
 	@RequestMapping(value = {"", "/", "/Index"})
 	public String Index()
 	{
-		return "/Vue/Index";
+		return "/Develop/Vue/Index";
 	}
 }
