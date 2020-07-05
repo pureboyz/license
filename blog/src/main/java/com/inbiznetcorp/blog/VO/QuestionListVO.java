@@ -2,24 +2,33 @@ package com.inbiznetcorp.blog.VO;
 
 public class QuestionListVO
 {
-	String chapter 	= "";	// 과목번호
-	String seq 		= "";	// 문제번호
+	String 	license 	= "";	// 자격증번호
+	String 	chapter 	= "";	// 과목번호
+	String 	seqquestion = "";	// 문제번호
+	int 	count 		= 0;	// 문제개수
 	
+	public String getLicense() {
+		return license;
+	}
+	public void setLicense(String license) {
+		this.license = license;
+	}
 	public String getChapter() {
 		return chapter;
 	}
 	public void setChapter(String chapter) {
 		this.chapter = chapter;
 	}
-	public String getSeq() {
-		return seq;
+	public String getSeqquestion() {
+		return seqquestion;
 	}
-	public void setSeq(String seq) {
-		this.seq = seq;
+	public void setSeqquestion(String seqquestion) {
+		this.seqquestion = seqquestion;
 	}
-	
-	@Override
-	public String toString() {
-		return "QuestionListDTO [chapter=" + chapter + ", seq=" + seq + "]";
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
 	}
 }

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.inbiznetcorp.blog.mapper.license.networkmanager.NetworkManagerMapper">
+
+	<!-- 해당 Chapter의 총 문제 갯수를 가져온다. -->
+	<select id="CountOfChapter" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			CHAPTER${value}
+		WHERE 1=1
+			AND SEQLICENSE = '1'
+	</select>
+
+	<!-- 해당 Chapter의 문제를 가져온다. -->
+	<select id="getQuestionList" parameterType="com.inbiznetcorp.blog.VO.QuestionListVO" resultType="hashmap">
+		SELECT
+			 SEQQUESTION
+			,QUESTION
+			,EXAMPLE1
+			,EXAMPLE2
+			,EXAMPLE3
+			,EXAMPLE4
+			,ANSWER
+		FROM
+			CHAPTER${chapter}
+		WHERE 1=1
+			AND SEQQUESTION IN (${seqquestion})
+			AND SEQLICENSE = '1'
+	</select>
+	
+	<!-- 테스트 이력을 가져온다. -->
+	<select id="getHistory" resultType="hashmap">
+		SELECT
+			 SEQ
+			,LICENSE
+			,SUBJECT
+			,SCORE
+			,DATE_FORMAT(CREATEDATE, '%Y-%m-%d') AS CREATEDATE
+			,DATE_FORMAT(CREATEDATE, '%H:%i:%s') AS CREATETIME
+		FROM
+			TESTHISTORY
+		WHERE 1=1
+			AND LICENSE = 'EIC'
+	</select>
+	
+	<!-- TEST 종료 후 이력추가 -->
+	<insert id="TestComplete">
+		INSERT INTO
+			TESTHISTORY
+		(
+			 LICENSE
+			,SUBJECT
+			,SCORE
+			,CREATEDATE
+		)
+		VALUES
+		(
+			 #{license}
+			,#{subject}
+			,#{score}
+			,now()
+		)
+	</insert>
+
+</mapper>

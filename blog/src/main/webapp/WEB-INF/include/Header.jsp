@@ -36,19 +36,20 @@
 							<!-- 상단 메뉴 왼쪽 -->
 							<ul class="nav navbar-nav">
 <!-- 								<li class="active"><a href="#">Link</a></li> -->
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">개발공부 <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="/Vue">Vue.js</a></li>
-										<li><a href="/Raspberry">Raspberry Pi</a></li>
+<!-- 								<li class="dropdown"> -->
+<!-- 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">개발공부 <b class="caret"></b></a> -->
+<!-- 									<ul class="dropdown-menu"> -->
+<!-- 										<li><a href="/Vue">Vue.js</a></li> -->
+<!-- 										<li><a href="/Raspberry">Raspberry Pi</a></li> -->
 <!-- 										<li class="divider"></li> -->
 <!-- 										<li><a href="#">Separated link</a></li> -->
-									</ul>
-								</li>
+<!-- 									</ul> -->
+<!-- 								</li> -->
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">자격증 문제풀기 <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="/License/EIC/Index">정보통신기사</a></li>
+<!-- 										<li><a href="/License/EIC/Index">정보통신기사</a></li> -->
+										<li><a href="">네트워크 관리사 2급</a></li>
 									</ul>
 								</li>
 							</ul>

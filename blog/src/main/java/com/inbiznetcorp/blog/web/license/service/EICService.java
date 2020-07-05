@@ -27,7 +27,7 @@ public class EICService
 	{
 		QuestionListVO vo = new QuestionListVO();
 		vo.setChapter("CHAPTER"+chapter);
-		vo.setSeq(RandomNumberUtil.RandomNumberToStr(eicMapper.CountOfChapter(chapter), 20, ","));
+		vo.setSeqquestion(RandomNumberUtil.RandomNumberToStr(eicMapper.CountOfChapter(chapter), 20, ","));
 		
 		return JsonUtil.ListToJSONArray(eicMapper.getQuestionList(vo));
 	}
